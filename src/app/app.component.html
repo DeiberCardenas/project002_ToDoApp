@@ -16,6 +16,30 @@
   >
     Añadir
   </button>
+  <div class="btn-wrapper">
+    <button
+      class="btn btn-menu"
+      [class.active]="filter == 'todas'"
+      (click)="filter = 'todas'"
+    >
+      Todas
+    </button>
+    <button
+      class="btn btn-menu"
+      [class.active]="filter == 'activas'"
+      (click)="filter = 'activas'"
+    >
+      Activas
+    </button>
+    <button
+      class="btn btn-menu"
+      [class.active]="filter == 'listo!!'"
+      (click)="filter = 'listo!!'"
+    >
+      Listo!
+    </button>
+  </div>
+
   <h2>
     {{ items.length }}
     @if (items.length ===1) { item } @else { items }

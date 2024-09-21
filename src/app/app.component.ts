@@ -14,7 +14,7 @@ export class AppComponent {
 
   componentTitle = 'Mis tareitas!!';
 
-  filter: 'todas' | 'activa' | 'listo!' = 'todas';
+  filter: 'todas' | 'activas' | 'listo!!' = 'todas';
 
   allItems = [
     { description: 'mamarle la cuca a mi mujer', done: true },
@@ -28,7 +28,7 @@ export class AppComponent {
       return this.allItems;
     }
     return this.allItems.filter((item) =>
-      this.filter === 'listo!' ? item.done : !item.done
+      this.filter === 'listo!!' ? item.done : !item.done
     );
   }
 
